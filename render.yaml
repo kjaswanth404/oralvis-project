@@ -1,0 +1,18 @@
+services:
+  # The frontend service
+  - type: web
+    name: oralvis-frontend
+    buildCommand: npm install
+    startCommand: npm start
+    env:
+      - key: VITE_API_URL
+        value: http://localhost:3000
+
+  # The backend service
+  - type: web
+    name: oralvis-backend
+    buildCommand: npm install
+    startCommand: node index.js
+    env:
+      - key: DATABASE_URL
+        value: postgres://user:password@host:port/database
