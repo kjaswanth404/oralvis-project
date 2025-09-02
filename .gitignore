@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Environment variables file
+.env
+
+# SQLite database file
+oralvis.db
+
+# Other files to ignore
+.DS_Store
